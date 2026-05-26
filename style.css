@@ -1,0 +1,108 @@
+
+body{
+margin:0;
+font-family:Arial;
+background:#07150e;
+color:white;
+overflow-x:hidden;
+}
+
+.video-container{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-1;
+overflow:hidden;
+}
+
+.video-container video{
+width:100%;
+height:100%;
+object-fit:cover;
+filter:brightness(0.3);
+}
+
+header{
+text-align:center;
+padding:50px 20px;
+}
+
+.logo{
+width:120px;
+height:120px;
+border-radius:30px;
+animation:float 3s infinite;
+}
+
+@keyframes float{
+50%{transform:translateY(-10px);}
+}
+
+.search-bar{
+margin-top:20px;
+display:flex;
+justify-content:center;
+gap:10px;
+flex-wrap:wrap;
+}
+
+.search-bar input{
+padding:15px;
+width:300px;
+border:none;
+border-radius:30px;
+}
+
+.search-bar button{
+padding:15px 25px;
+border:none;
+background:#17c964;
+color:white;
+border-radius:30px;
+cursor:pointer;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+padding:30px;
+}
+
+.card{
+background:rgba(255,255,255,0.1);
+backdrop-filter:blur(10px);
+padding:20px;
+border-radius:20px;
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:15px;
+}
+
+.card button{
+margin-top:15px;
+padding:12px 20px;
+border:none;
+border-radius:15px;
+background:#17c964;
+color:white;
+cursor:pointer;
+}
+
+.features{
+padding:30px;
+background:rgba(0,0,0,0.4);
+margin:20px;
+border-radius:20px;
+}
+
+footer{
+text-align:center;
+padding:30px;
+}
